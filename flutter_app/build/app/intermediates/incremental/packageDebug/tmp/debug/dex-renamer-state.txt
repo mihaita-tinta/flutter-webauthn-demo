@@ -1,4 +1,0 @@
-#Tue Oct 04 14:11:46 EEST 2022
-base.0=/Users/pf65op/Desktop/workspace/articles/flutter-webauthn-demo/flutter_app/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
