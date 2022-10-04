@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.mih.webauthn.demo.WebauthnDemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.378 s - in com.mih.webauthn.demo.WebauthnDemoApplicationTests
