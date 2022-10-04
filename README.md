@@ -1,8 +1,10 @@
 # flutter-webauthn-demo
 
 This repository is a POC combining Flutter, Spring Boot and WebAuthn.
-![demo](register.gif)
-![demo](demo.gif)
+
+<img src="register.gif" width="250"/>
+
+<img src="demo.gif" width="250"/>
 
 The API allows anonymous user registration and authentication using WebAuthn.
 The project serves as an example on how to integrate a Flutter application with Spring Boot.
