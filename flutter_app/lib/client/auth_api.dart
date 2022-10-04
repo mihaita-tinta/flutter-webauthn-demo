@@ -98,19 +98,17 @@ class AuthApi {
 
   Future<User> assertionFinish(
       String assertionId,
-      String username,
       String keyHandle,
       String challenge,
       String clientData,
       String authData,
       String signature,
       String userHandle) async {
-    log('assertionFinish - username: $username');
+    log('assertionFinish - keyHandle: $keyHandle');
     String url = '$BASE_URL/assertion/finish';
     var response = await _client.post(Uri.parse(url),
         headers: {
           HttpHeaders.contentTypeHeader: 'application/json',
-          HttpHeaders.cookieHeader: 'username=$username; challenge=$challenge',
           'X-Requested-With': 'XMLHttpRequest'
         },
         body: jsonEncode({

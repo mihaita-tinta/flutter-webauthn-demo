@@ -1,11 +1,9 @@
-import 'package:fido2_client/fido2_client.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app/client/auth_api.dart';
 import 'package:flutter_app/domain/user.dart';
-import 'package:flutter_app/repository/user_repository.dart';
 
 class WelcomeScreen extends StatefulWidget {
   final User user;
+
   const WelcomeScreen({Key? key, required this.user}) : super(key: key);
 
   @override
@@ -13,8 +11,6 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class _WelcomeScreenState extends State<WelcomeScreen> {
-
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -25,22 +21,24 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
-        title: const Text('Sign up'),
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.logout, color: Colors.white),
+            onPressed: () => Navigator.of(context).pop(),
+          )
+        ],
       ),
-      body: SingleChildScrollView(
-        child: Center(
-          // Center is a layout widget. It takes a single child and positions it
-          // in the middle of the parent.
-          child: Container(
-            margin: const EdgeInsets.all(10),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text('Welcome ${widget.user.firstName}'),
-              ],
-            ),
+      body: Center(
+        // Center is a layout widget. It takes a single child and positions it
+        // in the middle of the parent.
+        child: Container(
+          margin: const EdgeInsets.all(10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Text('Welcome ${widget.user.firstName}'),
+            ],
           ),
         ),
       ),

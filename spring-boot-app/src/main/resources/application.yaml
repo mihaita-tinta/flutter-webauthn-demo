@@ -13,9 +13,9 @@ spring:
     resources:
       static-locations: classpath:/META-INF/resources/webauthn/node_modules,classpath:/static
 webauthn:
-  relying-party-id: salty-islands-reply-86-126-30-191.loca.lt
+  relying-party-id: chatty-toys-march-86-126-30-191.loca.lt
   relying-party-name: WebAuthn Application
-  relying-party-origins: https://salty-islands-reply-86-126-30-191.loca.lt,android:apk-key-hash:t5OwAx-0r2saAq-IRdO8SuK_hkZWOglhkDSwg7OSpFE
+  relying-party-origins: https://chatty-toys-march-86-126-30-191.loca.lt,android:apk-key-hash:t5OwAx-0r2saAq-IRdO8SuK_hkZWOglhkDSwg7OSpFE
   registrationNewUsers:
     enabled: true
   username-required: false

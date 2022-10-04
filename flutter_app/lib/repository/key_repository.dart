@@ -6,12 +6,12 @@ class KeyRepository {
 
   static Future<String> loadKeyHandle() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    String key = prefs.getString('${KeyRepository.KEY_HANDLE_KEY}') ?? 'err';
+    String key = prefs.getString('${KeyRepository.KEY_HANDLE_KEY}') ?? '';
     return key;
   }
   static Future<String> loadUserHandle() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    String key = prefs.getString('${KeyRepository.USER_HANDLE_KEY}') ?? 'err';
+    String key = prefs.getString('${KeyRepository.USER_HANDLE_KEY}') ?? '';
     return key;
   }
 
